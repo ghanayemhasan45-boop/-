@@ -271,7 +271,7 @@ function toggleCart(forceOpen = false) {
 
 function checkout() {
     if (state.cart.length === 0) return;
-    const phone = "20110443639";
+    const phone = "201104436931";
     let msg = "مرحباً ميرا جولد، أود طلب المنتجات التالية:\n\n";
     state.cart.forEach(item => { msg += `- ${item.name} (${item.qty} قطعة) - ${item.price * item.qty} ج.م\n`; });
     msg += `\nالإجمالي: ${cartTotalEl.innerText}`;
